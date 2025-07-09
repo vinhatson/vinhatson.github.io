@@ -1,0 +1,85 @@
+#-----------------------------------------------#
+#         CÀI ĐẶT CƠ BẢN CỦA TRANG WEB          #
+#-----------------------------------------------#
+
+# Tiêu đề chính của trang web, xuất hiện trên tab trình duyệt
+title: Vi Nhật Sơn's Blog # Bạn có thể đổi lại theo ý muốn
+
+# Mô tả ngắn về trang web, dùng cho công cụ tìm kiếm (SEO)
+description: >- # Dấu >- cho phép viết mô tả trên nhiều dòng
+  Nơi chia sẻ kiến thức về lập trình và cuộc sống.
+
+# URL đầy đủ của trang web của bạn.
+# Đã tự động điền dựa trên tên repo của bạn.
+url: "https://vinhatson.github.io" 
+
+# Thư mục con nơi trang web của bạn được đặt.
+# Vì repo của bạn là vinhatson.github.io, giá trị này để trống.
+baseurl: "" 
+
+# Ngôn ngữ của trang, ví dụ: "en", "vi"
+lang: "vi"
+
+
+#-----------------------------------------------#
+#        TÙY CHỈNH CỦA THEME NAGYMAROS         #
+#-----------------------------------------------#
+
+# Đường dẫn đến file logo trong thư mục /assets/
+# Ví dụ: /assets/images/logo.png
+logo:
+
+# Thông tin tác giả
+author:
+  name: Vi Nhật Sơn
+  email: vinhatson@gmail.com # <-- THAY ĐỔI EMAIL CỦA BẠN VÀO ĐÂY
+  # Đặt là 'true' nếu bạn muốn ẩn email khỏi trang web
+  hide_email: false
+
+# Liên kết mạng xã hội của bạn
+# Đã tự động cập nhật từ thông tin bạn cung cấp
+social:
+  - name: GitHub
+    icon: "fab fa-github" # Icon từ Font Awesome
+    url: "https://github.com/vinhatson"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/son-vi-a5a5a156/"
+  - name: Facebook
+    icon: "fab fa-facebook"
+    url: "https://facebook.com/nhatson.vi"
+
+
+
+#-----------------------------------------------#
+#            CÀI ĐẶT NÂNG CAO & BUILD           #
+#-----------------------------------------------#
+
+# Cấu trúc của các liên kết tĩnh cho bài viết
+permalink: /posts/:title/
+
+# Trình xử lý Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Các plugin Jekyll cần thiết
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Loại trừ các file/thư mục không cần thiết khỏi quá trình build
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - README.md
